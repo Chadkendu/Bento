@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import AuthContext from "@/context/AuthContext";
 import getCurrentUser from "./actions/getCurrentUser";
+import Navbar from "@/components/shared/Navbar";
 import { EdgeStoreProvider } from "@/lib/edgestore";
 
 
