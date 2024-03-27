@@ -33,11 +33,11 @@ const CreateForm = ({ user }: { user: userTypes }) => {
     <div className="mx-auto w-full max-w-3xl px-4 flex flex-col gap-10 align-middle">
       <div className="bg-white py-8 shadow rounded-lg px-10 mt-[150px]">
         <h1 className="text-center text-2xl font-extrabold mb-10">
-          Create a Post {user.name}✍️
+          Create a Post {user.name}
         </h1>
         {!user ? (
           <h2 className="text-center text-xl font-extrabold uppercase">
-            Please Sign up or Log in to create a post!
+            Please Login to create a post!
           </h2>
         ) : (
           <>

@@ -6,8 +6,6 @@ export interface PostTypes {
   title: string;
   img: string | null;
   desc: string;
-  featured: boolean;
-  topPost: boolean;
   category: string;
   user: User;
 }
