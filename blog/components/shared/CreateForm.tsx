@@ -69,7 +69,7 @@ const CreateForm = ({ user }: { user: userTypes }) => {
                 className="text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6 border w-full border-gray-200 p-2 rounded-md py-1.5"
               >
                 <option value="" disabled selected>
-                  Choose Tag
+                  Category
                 </option>
                 <option value="Adventure">Adventure</option>
                 <option value="Coding">Coding</option>
@@ -77,6 +77,9 @@ const CreateForm = ({ user }: { user: userTypes }) => {
                 <option value="Entertainment">Entertainment</option>
                 <option value="Love">Love</option>
                 <option value="Love">Ancient</option>
+                <option value="Love">Life</option>
+                <option value="Love">Future</option>
+                <option value="Love">AI</option>
                 <option value="Love">ALX</option>
                 <option value="Love">Dog</option>
               </select>
