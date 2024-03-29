@@ -4,31 +4,30 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
-    box-sizing: border-box;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    background-color: rgb(247, 247, 247);
-    font-family: "Nunito", sans-serif;
-  }
-  
-  /* hide the side scrool */
+  box-sizing: border-box;
+}
 
-  ::-webkit-scrollbar {
-    width: 0;
-    background: transparent;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(247, 247, 247);
+  font-family: "Nunito", sans-serif;
+}
+
+/* hide the side scrool */
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+/* active navbar */
+
+@layer components {
+  .active {
+    @apply bg-black p-3 px-6 rounded-full text-white;
   }
-  
-  /* active navbar */
-  
-  @layer components {
-    .active {
-      @apply bg-black p-3 px-6 rounded-full text-white;
-    }
-  }
+}
