@@ -1,10 +1,5 @@
 import Tag from "@/components/ui/Tag";
 import Image from "next/image";
-import {
-  AiOutlineTwitter,
-  AiOutlineInstagram,
-  AiOutlineFacebook,
-} from "react-icons/ai";
 import { PostTypes } from "@/types/postTypes";
 import { formatDate } from "@/utils/formatDate";
 
@@ -14,7 +9,7 @@ const getData = async (id: string) => {
   });
 
   if (!res.ok) {
-    throw new Error("Failed");
+    throw new Error("Eroor failed");
   }
 
   return res.json();
@@ -26,7 +21,6 @@ const page = async ({ params }: { params: PostTypes }) => {
   return (
     <div className="flex flex-col gap-10 w-full align-middle items-start lg:p-10 p-3 mx-auto">
       <div className="mt-[120px]">
-
       </div>
       <h2 className="lg:text-7xl text-4xl font-bold uppercase">
         {post.title}
@@ -39,14 +33,10 @@ const page = async ({ params }: { params: PostTypes }) => {
           className="object-cover"
         />
       </div>
-
       <Tag text={post.category} />
-
       <div className=" flex w-fullmd:gap-20 gap-5 relative mt-10 md:flex-row flex-col">
-
         <article>
           <p className="text-xl">{post.desc}</p>
-
           <div className="mt-5 flex gap-5 items-center">
             <Image
               src={post.user.image}
