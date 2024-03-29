@@ -2,11 +2,7 @@
 import { useState, useEffect } from "react";
 import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import Image from "next/image";
-import Link from "next/link";
 import {
-  FacebookLoginButton,
-  GithubLoginButton,
   GoogleLoginButton,
 } from "react-social-login-buttons";
 const page = () => {
@@ -41,7 +37,7 @@ const page = () => {
     <div className="w-full flex flex-col mx-auto justify-center h-screen align-middle items-center">
       <div className="bg-white rounded-3xl p-10 flex flex-col gap-10 lg:w-[600px] w-full align-middle items-center">
         <h1 className="text-3xl uppercase font-bold text-center">
-          Welcome Back !
+          Welcome to bento !
         </h1>
         <GoogleLoginButton onClick={() => socialAction("google")} />
       </div>
