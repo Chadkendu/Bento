@@ -83,9 +83,7 @@ const CreateForm = ({ user }: { user: userTypes }) => {
                 <option value="Love">ALX</option>
                 <option value="Love">Dog</option>
               </select>
-
               <Input name="email" type="hidden" value={user?.email || ""} />
-
               <Button type="submit" text="Create" aria="create blog" />
             </Form>
           </>
