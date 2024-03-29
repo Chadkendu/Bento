@@ -18,6 +18,8 @@
     font-family: "Nunito", sans-serif;
   }
   
+  /* hide the side scrool */
+
   ::-webkit-scrollbar {
     width: 0;
     background: transparent;
