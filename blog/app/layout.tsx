@@ -6,10 +6,9 @@ import getCurrentUser from "./actions/getCurrentUser";
 import Navbar from "@/components/shared/Navbar";
 import { EdgeStoreProvider } from "@/lib/edgestore";
 
-
 export const metadata: Metadata = {
   title: "Bento",
-  description: "Blog portfolio",
+  description: "A personal web Blog application",
 };
 
 export default async function RootLayout({
@@ -22,9 +21,7 @@ export default async function RootLayout({
     <html lang="en">
       <AuthContext>
         <EdgeStoreProvider>
-          <body
-            className= "overflow-x-hidden"
-          >
+          <body className="overflow-x-hidden">
             <Navbar user={user as any} />
             {children}
             <Footer />

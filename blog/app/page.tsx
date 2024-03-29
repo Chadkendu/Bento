@@ -1,12 +1,10 @@
 import Hero from "@/components/shared/Hero";
 
-import prisma from "@/lib/prismadb";
 const Home = async () => {
-
   return (
-    <>
+    <div className="w-full">
       <Hero />
-    </>
+    </div>
   );
 };
 
